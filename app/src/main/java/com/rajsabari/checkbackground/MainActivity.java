@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -23,12 +24,15 @@ public class MainActivity extends AppCompatActivity {
                 {
                     case R.id.red:
                     getWindow().getDecorView().setBackgroundColor(Color.RED);
+                        Toast.makeText(MainActivity.this, "The color is RED", Toast.LENGTH_SHORT).show();
                     break;
                     case R.id.blue:
                         getWindow().getDecorView().setBackgroundColor(Color.BLUE);
+                        Toast.makeText(MainActivity.this, "The color is BLUE", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.green:
                         getWindow().getDecorView().setBackgroundColor(Color.GREEN);
+                        Toast.makeText(MainActivity.this, "The color is GREEN", Toast.LENGTH_SHORT).show();
                         break;
 
                 }
